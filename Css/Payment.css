@@ -1,0 +1,117 @@
+@import url('../Css/font-face.css');
+:root{
+    --bg-lightpink:#ffe5de;
+    --bg-orange:#fe734c;
+    --bg-black:#1d2323;
+    --bg-white:#fcfcfc;
+
+    --text-lightpink:#ffe5de;
+    --text-orange:#fe734c;
+    --text-black:#1d2323;
+    --text-white:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-lightpink);
+    font-family: dejavubold;
+}
+.cart-parent{
+    width: 30%;
+    height: auto;
+    background-color: var(--bg-white);
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 25px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 20px;
+    box-shadow: 0px 0px 30px lightgrey;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.back p,a{
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.product-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px lightgray;
+    margin-top: 4%;
+}
+.product-image img{
+    width: 115px;
+    height: 100px;
+    
+}
+.product-details{
+    width: 100%;
+    margin-left: 10%;
+}   
+.product-details p{
+    font-size: large;
+    font-weight: bolder;
+
+}
+.product-details span{
+    color: var(--text-orange);
+    font-size: 15px;
+    font-weight: bolder;
+}
+.product-quantity{
+    width: 15%;
+}
+.product-quantity input[type=radio]{
+    width: 100%;
+    height: 30px;
+    accent-color:#e69d15;
+    color: white;
+    background-color: #fcfcfc;
+}
+.confirm-order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+}
+.spn1{
+    font-size: 18px;
+    color: #fe734c;
+    font-weight: bolder;
+}
+.spn2{
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+}
+.main-price p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.order-btn button{
+    background-color: #fe734c;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px grey;
+}
+.order-btn button:hover{
+    background-color: #e65932;
+}
