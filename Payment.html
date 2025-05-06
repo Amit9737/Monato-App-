@@ -1,0 +1,103 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/Payment.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const orderButton = document.getElementById("order");
+        
+                orderButton.addEventListener("click", function () {
+                    alert("Order Placed Successfully");
+                    // Redirect to index.html after alert
+                    window.location.href = "index.html";
+                });
+            });
+        </script>
+        
+        
+        <title>Monato - Payment</title>
+    </head>
+
+    <body>
+        <div class="cart-parent">
+            <header>
+                <div class="back">
+                    <p><a href="Cart.html">&lt;</a></p>
+                </div>
+                <div class="title">
+                    <h1>Payment</h1>
+                </div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </header>
+            <main>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Paypal.png" alt="Paypal Payment">
+                    </div>
+                    <div class="product-details">
+                        <p>Paypal</p>
+                    </div>
+                    <div class="product-quantity">
+                        <input type="radio" name="Payment" id="Paypal">
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Master-Card Pay.png" alt="Credit Card Payment">
+                    </div>
+                    <div class="product-details">
+                        <p>Credit Card</p>
+                    </div>
+                    <div class="product-quantity">
+                        <input type="radio" name="Payment" id="Credit-card">
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/ApplePAy.png" alt="Apple Payment">
+                    </div>
+                    <div class="product-details">
+                        <p>Apple pay</p>
+                    </div>
+                    <div class="product-quantity">
+                        <input type="radio" name="Payment" id="Apple Pay">
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/GooglePay.png" alt="Google Payment">
+                    </div>
+                    <div class="product-details">
+                        <p>Google pay</p>
+                    </div>
+                    <div class="product-quantity">
+                        <input type="radio" name="Payment" id="Google pay">
+                    </div>
+                </div>
+
+                <div class="confirm-order">
+                    <div class="total-price">
+                        <div class="main-price">
+                            <p>Total Price</p>
+                        </div>
+                        <span class="spn1">Rs.</span><span class="spn2"><b>980</b></span>
+                    </div>
+                    <div class="order-btn">
+                        <button id="order">Payment Now</button>
+                    </div>
+                    
+                </div>
+            </main>
+        </div>
+    </body>
+
+    </html>
